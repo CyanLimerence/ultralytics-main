@@ -14,7 +14,7 @@ for m in model.model.modules():
     if hasattr(m, 'format'):
         m.format = 'onnx'
 
-print("-> 3. 施展架构师魔法：注入【全自动张量雷达与缝合器】...")
+print("-> 3. 注入【全自动张量雷达与缝合器】...")
 old_forward = model.model.forward
 
 
