@@ -1,7 +1,7 @@
 import torch
 from ultralytics import YOLO
 
-print("-> 1. 加载官方 PyTorch 权重...")
+print("-> 1. 加载 PyTorch 权重...")
 model = YOLO('yolo26n-seg.pt')  # 确保这里是你的权重名
 num_classes = len(model.names)
 print(f"   检测到模型包含类别数: {num_classes}")
